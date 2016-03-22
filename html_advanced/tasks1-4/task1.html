@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="Forms 1" content="html advanced, submit">
+	<meta charset="UTF-8">
+	<title>HTML Advanced Task 1</title>
+</head>
+<body>
+	<h1 style="text-align: center">Task 1</h1>
+	<ul>
+		<li><a href="#">Searching</a></li>
+		<li><a href="#">YouTibe</a></li>
+		<li><a href="#">Card</a></li>
+		<li><a href="#">Play</a></li>
+		<li><a href="#">News</a></li>
+		<li><a href="#">Mail</a></li>
+	</ul>
+	<ol start="7">
+		<li>Searching</li>
+		<li>Card</li>
+		<li>Market</li>
+		<li>News</li>
+		<li>Dictionaries</li>
+		<li>Pictures</li>
+		<li>Yet
+			<ul>
+				<li>Flights</li>
+				<li>Auto</li>
+				<li>Poster</li>
+				<li>Blogs</li>
+			</ul>
+		</li>
+	</ol>
+	<dl>
+		<dt>Tag</dt>
+		<dd><em>Lorem ipsum dolor sit amet.</em></dd>
+		<dt>The Semantic Web</dt>
+		<dd><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum odit cumque commodi perferendis placeat nam pariatur ut, ipsam consectetur quos dolores architecto, corporis quas.</em></dd>
+	</dl>
+	<hr>
+	<table style="border: solid black 1px">
+		<caption>CSS Generated content for pseudo-elements</caption>
+		<tr >
+			<th style="border:1px solid black">IE</th>
+			<th style="border:1px solid black">Firefox</th>
+			<th style="border:1px solid black">Chrome</th>
+			<th style="border:1px solid black">Safari</th>
+			<th style="border:1px solid black">Opera</th>
+			<th style="border:1px solid black">iOS Safari</th>
+			<th style="border:1px solid black">Opera Mini</th>
+			<th style="border:1px solid black">Android Browser</th>
+			<th style="border:1px solid black">Chrome and Android</th>
+		</tr>
+		<tr>
+			<td rowspan="2" style="border:1px solid black"></td>
+			<td rowspan="4" style="border:1px solid black"></td>
+			<td style="border:1px solid black">27</td>
+			<td rowspan="3" style="border:1px solid black"></td>
+			<td rowspan="5" style="border:1px solid black"></td>
+			<td rowspan="4" style="border:1px solid black"></td>
+			<td rowspan="5" style="border:1px solid black"></td>
+			<td style="border:1px solid black"></td>
+			<td rowspan="5" style="border:1px solid black"></td>
+		</tr>
+		<tr>
+			<td style="border:1px solid black">31</td>
+			<td style="border:1px solid black">2.3</td>
+		</tr>
+		<tr>
+			<td style="border:1px solid black">8</td>
+			<td style="border:1px solid black">33</td>
+			<td style="border:1px solid black">4</td>
+		</tr>
+		<tr>
+			<td style="border:1px solid black">9</td>
+			<td style="border:1px solid black">34</td>
+			<td style="border:1px solid black">5.1</td>
+			<td style="border:1px solid black">4.1</td>
+		</tr>
+		<tr>
+			<td style="border:1px solid black">10</td>
+			<td style="border:1px solid black">thirty</td>
+			<td style="border:1px solid black">35</td>
+			<td style="border:1px solid black">6.1</td>
+			<td style="border:1px solid black">6.1</td>
+			<td style="border:1px solid black">4.3</td>
+		</tr>
+		<tr>
+			<td style="border:1px solid black">eleven</td>
+			<td style="border:1px solid black">31</td>
+			<td style="border:1px solid black">36</td>
+			<td style="border:1px solid black">7</td>
+			<td style="border:1px solid black">23</td>
+			<td style="border:1px solid black">7.1</td>
+			<td style="border:1px solid black">7</td>
+			<td style="border:1px solid black">4.4</td>
+			<td style="border:1px solid black">36</td>
+		</tr>
+		<tr>
+			<td colspan="9" style="border:1px solid black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, in! Libero accusamus, dolorum, ullam veniam molestias repellat quas illum.</td>
+		</tr>
+	</table>	
+	<hr>
+	<form action="http://httpbin.org/get" target="_blank" method="get">
+		<fieldset>
+			<legend>Personal data</legend>
+			<label for="surname">Surname</label>	<input type="text" id="surname" name="surname" autofocus><br><br>
+			<label for="firstname">First Name</label> <input type="text" id="firstname" name="firstname"><br><br>
+			<label for="middlename">Middle name</label>	<input type="text" id="middlename" name="middlename"><br><br>
+			You are <input type="radio" id="male" name="sex" value="male" checked> <label for="male">male</label>
+			<input type="radio" id="female" name="sex" value="female"> <label for="female">female</label> <br><br>
+			<label for="age">Age</label><input type="number" id="age" name="age" min="18" max="101" style="width:150px; margin-left: 5px"><br><br>
+			<label for="country">Country of Residence </label><input list="countries" id="country">
+			<datalist id="countries">
+				<option value="Belgium">Belgium</option>
+				<option value="Argentina">Argentina</option>
+				<option value="Russia">Russia</option>
+				<option value="Spain">Spain</option>
+				<option value="Germany">Germany</option>
+				<option value="Chile">Chile</option>
+			</datalist><br><br>
+			City <input type="checkbox" id="cityRya" name="city" value="Ryazan"><label for="cityRya">Ryazan </label> 
+			<input type="checkbox" id="cityMsc" name="city" value="Moscow"><label for="cityMsc">Moscow </label><br><br>
+			Photography <input type="file" name="img" multiple>
+			<hr>
+		Title <select name="title[]" size="8" id="title">
+			<optgroup label="Technologies"></optgroup> 
+			<option value="Web Master" style="padding-left: 20px">Web Master</option>
+			<option value="Database Administrator" style="padding-left: 20px">Database Administrator</option>
+			<option value="Computer-aided Design" style="padding-left: 20px">Computer-aided Design</option>
+			<optgroup label="Finance"></optgroup>
+			<option value="Economic Planning" style="padding-left: 20px">Economic Planning</option>
+			<option value="Management Accounting" style="padding-left: 20px">Management Accounting</option>
+			<option value="Budgatting and planning" style="padding-left: 20px">Budgatting and planning</option>
+		</select><br><br>
+		<label for="salary">Salary</label><input type="range" name="salary" id="salary" min="15000" max="50000" step="500" value="25000"><br><br>
+		<textarea name="textfield" cols="50" rows="10" placeholder="tell us about yourself..."></textarea><br><br>
+		</fieldset>
+		<fieldset>
+			<legend>Contact information</legend>
+			<label for="site">Site </label><input type="url" name="site" id="site" pattern="^((https?|ftp)\:\/\/)?([a-z0-9]{1})((\.[a-z0-9-])|([a-z0-9-]))*\.([a-z]{2,6})(\/?)$"><br><br>
+			<label for="email">E-mail </label><input type="email" name="email" id="email" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"><br><br>
+			<label for="phone">Phone </label><input type="tel" name="phone" id="phone" pattern="[0-9]{10,11}"><br><br>
+		</fieldset><br>
+		<label for="pass">Password </label><input type="password" name="password" id="pass" required><br><br>
+		<input type="submit" value="Отправить">
+		<input type="reset" value="Сбросить">
+	</form>
+</body>
+</html>
