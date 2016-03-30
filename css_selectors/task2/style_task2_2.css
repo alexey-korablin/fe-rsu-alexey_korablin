@@ -1,0 +1,29 @@
+table{
+	border-collapse: collapse;
+	text-align: center;
+	background-color: #e4e5e0;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1em;
+}
+table *{
+	border: 2px solid white;
+}
+th{
+	padding: 5px 6px;
+	text-transform: uppercase;
+	background-color: #bfbfbf;
+	font-size: 0.7em;
+}
+td{
+	padding: 16px 12px;
+}
+td:first-child {
+	text-transform: capitalize;
+}
+tr:nth-child(2n+1){
+	background-color: #bdbfb9;
+}
+tr:nth-child(n+1):hover{
+	background-color: #cdcdcd;
+	cursor: pointer;
+}

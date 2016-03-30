@@ -1,0 +1,29 @@
+.mainTable{
+	border-collapse: collapse;
+	text-align: center;
+	background-color: #e4e5e0;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1em;
+}
+.mainTable *{
+	border: 2px solid white;
+}
+#headTable th{
+	padding: 5px 6px;
+	text-transform: uppercase;
+	background-color: #bfbfbf;
+	font-size: 0.7em;
+}
+.customerRow td{
+	padding: 16px 12px;
+}
+.bigFirstLatter{
+	text-transform: capitalize;
+}
+.customerRow.odd{
+	background-color: #bdbfb9;
+}
+.customerRow:hover{
+	background-color: #cdcdcd;
+	cursor: pointer;	
+}
