@@ -1,0 +1,46 @@
+.container{
+	width: 400px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.transformer{
+	width: 70px;
+	height: 70px;
+	margin: 90px auto 0;
+	background: radial-gradient(#00a3d3, #9ac07e, #00a3d3);
+	border-radius: 50%;
+	animation: transformation 3.6s infinite 0s linear;
+}
+@keyframes transformation{
+	5%{
+		visibility: visible;
+	}
+	7%{
+		border-radius: 25%;
+	}
+	13%{
+		border-radius: 0;
+	}
+	33%{
+		background: radial-gradient(#9ac07e, #00a3d3, #9ac07e)
+	}
+	52%{
+		transform: skew(35deg, 20deg);
+		height: 81px;
+		width: 78px;
+	}
+	67%{
+		border-radius: 1%;
+	}
+	68%{
+		transform: rotate(490deg);
+	}
+	84%{
+		background: radial-gradient(#00a3d3, #9ac07e, #00a3d3);
+	}
+	97%{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	}
+}

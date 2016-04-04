@@ -1,0 +1,93 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s;
+}
+body{
+	background-color: #bbb;
+  background: repeating-linear-gradient(45deg, #f6f6f6 0, #f6f6f6 5%, #fff 0, #fff 50%) 0 / 20px 20px;
+	font-family: 'boring_boron', Arial, sans-serif;
+}
+.container{
+	width: 360px;
+	margin: 32px auto;
+	text-align: center;
+}
+h1{
+	font-size: 1.8em;
+	color: black;
+}
+.container button{
+  width: 100px;
+  height: 100px;
+  color: #ffffff;
+  background-color: #65a2f2;
+  text-decoration: none;
+  font-size: 1.4em;
+  border: 2px #ffffff solid;
+  margin: 10px 0 0 10px;
+  transition: all 0.5s;
+}
+h1:hover:after,h1:hover:before{
+	font-size: 0.6em;
+	font-style: italic;
+}
+h1:hover:after {
+	content: "by NobodyRocks";
+}
+h1:hover:before {
+	content: "some";
+}
+.container button:hover{
+	cursor: pointer;
+}
+.highlight:hover{
+	background-color: #b54889;
+	color: #a4b05c;
+}
+.fade:hover{
+	opacity: 0;
+}
+.boom:hover{
+	transform: scale(2, 2);
+	opacity: 0;
+}
+.focus{
+	align-items: flex-end;
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+.focus:hover{
+	border-width: 20px;
+}
+.rotate:hover{
+	transform: rotate(90deg);
+}
+.knit:hover{
+	height: 5px;
+}
+.shrink:hover{
+	transform: scale(0.0, 0.0);
+}
+.squeeze:hover{
+	transform: scale(1.5, 0.0);
+}
+.deform:hover{
+	transform: skew(45deg, 45deg);
+}
+
+@font-face{
+	font-family: boring_boron;
+	src: url(lib/fnt/boring-boron.ttf);
+}
+@media (max-width: 330px) {
+  #container {
+    width: 100%;
+  }
+  button {
+    width: 90%;
+    margin: 5% 0 0 5%;
+  }
+}
+    

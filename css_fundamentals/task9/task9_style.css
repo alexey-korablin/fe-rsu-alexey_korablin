@@ -1,0 +1,96 @@
+.scene{
+	width: 1150px;
+	height: 800px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #eee;
+}
+.platform1{
+	width: 240px;
+	height: 120px;
+	position: absolute;
+	top: 440px;
+	left: 230px;
+	background-color: #608641;
+	transform: skewX(70deg);
+	box-shadow: 6px 4px 1px #aaa;
+}
+.platform2{
+	width: 160px;
+	height: 80px;
+	position: absolute;
+	top: 310px;
+	left: 810px;
+	background-color: #608641;
+	transform: skewX(70deg);
+	box-shadow: 6px 4px 1px #aaa;
+}
+.circle_box{
+	width: 610px;
+	height: 170px;
+	position: relative;
+	left: 350px;
+	top: 420px;
+	/*-webkit-animation: bounce_circle 2.7s infinite 0s linear;
+		-o-animation: bounce_circle 2.7s infinite 0s linear;*/
+		animation: bounce_circle 2.7s infinite 0s linear;	
+}
+.circle{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: absolute;
+	top: 60px;
+	left: 20px;
+	background-color: #a12f35;
+	transform: scale(1, 0.5);
+	/*-webkit-animation: move_circle 2.7s infinite 0s linear;
+	-o-animation: move_circle 2.7s infinite 0s linear;*/
+	animation: move_circle 2.7s infinite 0s linear;
+}
+
+@keyframes bounce_circle {
+	0%{
+		transform: rotate(0deg);
+	}
+	25%{
+		transform: rotate(70deg);
+	}
+	50%{
+		transform: rotate(140deg);
+	}
+	75%{
+		transform: rotate(70deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+@keyframes move_circle{
+	0%{
+		transform: scale(1, 0.5);
+	}
+	25%{
+		transform: scale(1, 1);
+		width: 30px;
+		height: 30px;
+	}
+	50%{
+		transform: scale(0.6, 0.7);
+		width: 20px;
+		height: 20px;
+	}
+	75%{
+		transform: scale(1, 1);
+		width: 30px;
+		height: 30px;
+	}
+	97%{
+		transform: scale(1, 1);
+	}
+	100%{
+		transform: scale(1, 0.5);
+		width: 40px;
+		height: 40px;
+	}
+}

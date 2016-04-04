@@ -1,0 +1,7 @@
+div{
+	margin: 0 auto;
+	width: 450px;
+	height: 330px;
+	border: 12px solid #33475f;
+	background: radial-gradient(circle at center, #00be9c 100px, white 100px);
+}

@@ -1,0 +1,16 @@
+body{
+	background-color: #444;
+}
+div{
+	margin: 100px auto;
+	width: 460px;
+	box-shadow: inset 0px 0px 15px 10px #111;
+}
+div .inner{
+	box-shadow: inset 0px 0px 0px 2px #eee;
+}
+img{
+	width: 460px;
+	z-index: -1;
+	position: relative;
+}

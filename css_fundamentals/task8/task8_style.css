@@ -1,0 +1,89 @@
+.text{
+	margin: 20px auto;
+	width: 230px;	
+	text-transform: uppercase;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 3em;
+}
+#bounceBallC{
+	position: relative;
+	width: 240px;
+	height: 43px;
+	margin: 20px auto;
+}
+.bounceBall1{
+	background-color: #de873a;
+	position: absolute;
+	top: 0;
+	left: -20px;
+	width: 43px;
+	height: 43px;
+	border-radius: 21px;
+	animation: bounce_Ball_one 3s infinite linear 0s;
+	transform: scale(0.5, 1);
+}
+.bounceBall2{
+	background-color: #608641;
+	position: absolute;
+	top: 0;
+	left: 230px;
+	width: 43px;
+	height: 43px;
+	border-radius: 21px;
+	animation: bounce_Ball_two 1.5s infinite linear 0s;
+	transform: scale(0.5, 1);
+}
+@keyframes bounce_Ball_one{
+	0%{
+		left: 0;
+		transform: scale(0.5, 1);
+		background-color: rgba(222,135,58,0.25);
+	}
+	25%{
+		left: 50%;
+		transform: scale(1, 0.5);
+		background-color: rgba(222,135,58,0.5);
+	}
+	50%{
+		left: 100%;
+		transform: scale(0.5, 1);
+		background-color: rgba(222,135,58,0.75);
+	}
+	75%{
+		right: 50%;
+		transform: scale(1, 0.5);
+		background-color: rgba(222,135,58,1);
+	}
+	100%{
+		right: 100%;
+		transform: scale(0.5, 1);
+		background-color: rgba(222,135,58,0.25);
+	}
+}
+@keyframes bounce_Ball_two{
+	0%{
+		left: 100%;
+		transform: scale(0.5, 1);
+		background-color: rgba(96,134,65,0.25);
+	}
+	25%{
+		left: 50%;
+		transform: scale(1, 0.5);
+		background-color: rgba(96,134,65,0.5);
+	}
+	50%{
+		left: -20px;
+		transform: scale(0.5, 1);
+		background-color: rgba(96,134,65,0.75);
+	}
+	75%{
+		left: 50%;
+		transform: scale(1, 0.5);
+		background-color: rgba(96,134,65,1);
+	}
+	100%{
+		left: 100%;
+		transform: scale(0.5, 1);
+		background-color: rgba(96,134,65,0.25);
+	}
+}
