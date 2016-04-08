@@ -1,0 +1,28 @@
+.arrow-box{
+	width: 300px;
+	height: 80px;
+	position: relative;
+	top: 60px;
+	left: 60px;
+	padding: 10px;
+	color: #fff;
+	font-size: 0.8em;
+	background-color: #ea4b35;
+	box-sizing: border-box;
+	border: #7e8c8d solid 5px;
+}
+.arrow-box::before, .arrow-box::after{
+	content: "";
+	position: absolute;
+	top: -60px;
+	left: 40%;
+	border: 30px solid transparent;
+	border-bottom: 30px solid #7e8c8d;
+	width: 0;
+	height: 0;
+}
+.arrow-box::after{
+	border-bottom: 30px solid #ea4b35;
+	top: -54px;
+	left: 117px;
+}

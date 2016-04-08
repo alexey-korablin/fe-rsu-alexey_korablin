@@ -1,0 +1,101 @@
+.main_menu{
+	max-width: 1594px;
+	height: 30px;
+	margin-top: 70px;
+	background: #00c0e5 url(img/bg.png) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.m_m_left{
+	width: 350px;
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+.m_m_l_item{
+	min-width: 30px;
+	background-color: #00c0e5;
+	margin-right: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.m_m_l_item div{
+	width: 20px;
+	height: 20px;
+	background-color: #c44968;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	font-size: 0.8em;
+	line-height: 20px;
+}
+.m_m_l_item1{
+	width: 50px;
+}
+.m_m_l_item2{
+	width: 80px;
+}
+.m_m_l_item2>div{
+	width: 50px;
+	height: 20px;
+}
+.m_m_l_item3{
+	width: 50px;
+}
+.m_m_l_item3 div{
+	width: 18px;
+	height: 20px;
+}
+.m_m_l_item .m_m_l_item4{
+	width: 30px;
+}
+.m_m_l_item:hover{
+	background-color: #c44968;
+	cursor: pointer;
+}
+.m_m_right{
+	width: 250px;
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+	align-items: stretch;
+}
+.m_m_r_item{
+	min-width: 30px;
+	background-color: #00c0e5;
+	margin-left: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.m_m_right .m_m_r_item7{
+	width: 100px;
+	background-color: #3f3e44;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.m_m_r_item5:hover, .m_m_r_item6:hover{
+	background-color: #c44968;
+	cursor: pointer;
+}
+.m_m_r_item7:hover{
+	cursor: pointer;
+}

@@ -1,0 +1,79 @@
+.container{
+	width: 472px;
+	margin: 0 auto;
+}
+h1{
+	margin: 16px 0 0 0;
+}
+.section-box{
+	width: 136px;
+	position: relative;
+	margin-bottom: 8px;
+}
+.float-section-box{
+	float: left;
+}
+.inline-section-box{
+	display: inline-block;
+}
+.section-box img{
+	width: 104px;
+	height: 77px;
+	border: 7px solid white;
+	outline: 1px solid #666;
+	display: block;
+	margin: 12px 12px 8px 12px;
+}
+.flex-container{
+	height: 277px;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-between;
+}
+.flex-section-box{
+	width: 140px;
+	height: 132px;
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+}
+.th_text{
+	width: 104px;
+	height: 31px;
+	padding: 26px 15px 27px;
+	position: absolute;
+	top: 19px;
+	left: 19px;
+	background-color: rgba(63,62,68,0.4);
+	font-size: 0.7em;
+	color: white;
+	font-weight: 600;
+	display: table;
+	vertical-align: bottom;
+	box-sizing: border-box;
+	opacity: 0;
+}
+.button1, .button2{
+	height: 25px;
+	background-color: #fff;
+	border: 1px solid #666;
+	border-radius: 5px;
+	color: #666;
+	font-size: 0.7em;
+}
+.button1{
+	margin-left: 11px;
+	margin-right: 4px;
+}
+.button1:hover, .button2:hover{
+	background-color: rgb(91,217,154);
+}
+.first_word{
+	color: #aaa;
+}
+.second_word{
+	color: #01aba8;
+}
+.th_text:hover{
+	opacity: 1;
+}

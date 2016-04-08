@@ -1,0 +1,32 @@
+.caption{
+	width: 600px;
+	height: 200px;
+	position: relative;
+	margin: 50px auto;
+	padding: 30px 50px;
+	box-sizing: border-box;
+	box-shadow: 0 0 3px 1px #555;
+	border-radius: 10px;
+	border-top-left-radius: 0;
+	background-color: #00be9c;
+	font-size: 1.2em;
+	color: #01a185;
+}
+.caption::before{
+	content: "Caption";
+	position: absolute;
+	width: 100px;
+	height: 35px;
+	top: -35px;
+	left: 0;
+	background-color: #00be9c;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-weight: 600;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 6px;
+	border: 2px solid #01a185;
+	z-index: 1;
+	box-shadow: 0 0 3px 1px #555;
+}
