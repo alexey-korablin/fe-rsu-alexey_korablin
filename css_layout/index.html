@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Layout</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="lib/fnt/font-awesome-4.5.0/font-awesome-4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<nav class="top-nav">
+				<ul>
+					<li><a href="#">Help Center</a><i class="fa fa-circle"></i></li>
+					<li><a href="#">Our support</a></li>
+				</ul>
+			</nav>
+			<div class="author">
+				<div class="photo"></div>
+				<span class="name">John Doe</span>
+				<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+			</div>
+		</header>
+		<main class="main">
+			<aside class="blok-menu">
+				<div class="button-blok">
+					<div class="button"><i class="fa fa-plus" aria-hidden="true"></i><p>Add a book</p></div>
+				</div>
+				<nav class="main-menu">
+					<ul>
+						<li><i class="fa fa-book" aria-hidden="true"></i><a href="#">Now reading</a></li>
+						<li><i class="fa fa-globe" aria-hidden="true"></i><a href="#">Browse</a></li>
+						<li><i class="fa fa-shopping-cart" aria-hidden="true"></i><a href="#">Buy books</a></li>
+						<li><i class="fa fa-star" aria-hidden="true"></i><a href="#">Favourite books</a></li>
+						<li><i class="fa fa-th-list" aria-hidden="true"></i><a href="#">Wishlist</a></li>
+						<li><i class="fa fa-clock-o" aria-hidden="true"></i><a href="#">History</a></li>
+					</ul>
+				</nav>
+				<nav class="second-menu">
+					<ul>
+						<li><i class="fa fa-circle"></i><a href="#">Must read titles</a></li>
+						<li><i class="fa fa-circle ch-color"></i><a href="#">Best of list</a></li>
+						<li><i class="fa fa-circle"></i><a href="#">Classic novels</a></li>
+						<li><i class="fa fa-circle"></i><a href="#">Non fiction</a></li>
+					</ul>
+				</nav>
+				<article class="information">
+					<ul>
+						<li class="recent"><i class="fa fa-clock-o" aria-hidden="true"></i><a href="#">You added <span>Fight Club</span> by <span>Chuck Palahniuk</span> to your <span>Must Read</span> Titles.</a> </li>
+						<li class="recent time">24 minutes ago</li>
+						<li class="recent"><i class="fa fa-clock-o" aria-hidden="true"></i><a href="#">You added The <span>Trial</span> by <span>Franz Kafka</span> to your <span>Must Read</span> Titles.</a></li>
+						<li class="recent time">48 minutes ago</li>
+					</ul>
+				</article>
+			</aside>
+			<section class="main-block">
+				<nav class="top-main-nav">
+					<div class="top-section">
+						<h1>Browse available books</h1>
+					</div>
+					<div class="bottom-section">
+						<ul>
+							<li><a href="#">All books</a></li>
+							<li><a href="#">Most recent</a></li>
+							<li><a href="#">Most popular</a></li>
+							<li><a href="#">Free books</a></li>
+						</ul>
+						<div class="find-blok">
+							<form action="#" name="form1" method="get">
+								<input type="text" class="search" id=search placeholder=" Enter Keywords">
+								<input type="image" class="image-button" src="lib/img/35914-200.png" alt="button find">
+							</form>
+						</div>
+					</div>
+				</nav>
+				<article class="main-information-blok">
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/perl6book-parody.gif" alt="Designing perl 6">
+						</div>
+						<p class="book-name">Designing perl 6</p>
+						<p class="book-author">Domian conway</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/00241db3.jpeg" alt="Unix in a nutshall">
+						</div>
+						<p class="book-name"><span class="uppercase">Unix in a nutshall</span></p>
+						<p class="book-author">Arnold robbins</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/OReilly-Mastering-Algorithms-with-Perl_800x600.jpg" alt="Mastering Algorithms with Perl">
+						</div>
+						<p class="book-name">Algorithms <span class="lowercase">with</span> Perl</p>
+						<p class="book-author">Jon orwant</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/1000784010.jpg" alt="HTML и XHTML">
+						</div>
+						<p class="book-name"><span class="uppercase">HTML</span> и <span class="uppercase">XHTML</span></p>
+						<p class="book-author">Elisabeth Robson</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/drupal-oreilly-book-cover-900x1350.jpg" alt="Using drupal">
+						</div>
+						<p class="book-name">Using drupal</p>
+						<p class="book-author">Angela Byron</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/1015-potto.png" alt="Learning the vi editor">
+						</div>
+						<p class="book-name">Learning the vi editor</p>
+						<p class="book-author">Linda lamb</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/498796.jpg" alt="iOS приемы программирования">
+						</div>
+						<p class="book-name"><span class="lowercase">i</span>OS <span class="lowercase">programming tricks</span></p>
+						<p class="book-author">Вандад Нахавандипур</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/b6e251455aaeb6a2432576b9cff72d5e.jpg" alt="Learning python">
+						</div>
+						<p class="book-name">Learning python</p>
+						<p class="book-author">Mark Lutz</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/A3E09115-C507-439F-A764-E4BB89967E16Img100.jpg" alt="C++ in a nutshall">
+						</div>
+						<p class="book-name">C++ <span class="uppercase">in a nutshall</span></p>
+						<p class="book-author">Ray Lishner</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/cover.jpg" alt="Linux device drivers">
+						</div>
+						<p class="book-name"><span class="uppercase">Linux device drivers</span></p>
+						<p class="book-author">Alessandro Rubini</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/e4a5cf99b6935645f3fc058abe3fee9a-d.jpg" alt="Python for administrators">
+						</div>
+						<p class="book-name">Python</p>
+						<p class="book-author">Noab Gift</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/Ruby_in_a_Nutshell.bmp" alt="Ruby in a nutshall">
+						</div>
+						<p class="book-name"><span class="uppercase">Ruby in a nutshall</span></p>
+						<p class="book-author">Yukibiro Matsumoto</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/51O4Y90uzyL.jpg" alt="Learning scala">
+						</div>
+						<p class="book-name"><span class="uppercase">Learning scala</span></p>
+						<p class="book-author">Jason Swartz</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/orabanms2.gif" alt="Banishing microsoft">
+						</div>
+						<p class="book-name">Banishing microsoft</p>
+						<p class="book-author">Jason Swartz</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/1423579646_2xtuoefdpw8wyxg.jpeg" alt="Programming with java">
+						</div>
+						<p class="book-name">Programming <span class="lowercase">with</span> java</p>
+						<p class="book-author">Patrik Nymayer</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/книга-Java-EE-7-Основы-Арун-Гупта-978-5-8459-1896-3.jpg" alt="java ee 7">
+						</div>
+						<p class="book-name">Java <span class="uppercase">ee</span> 7</p>
+						<p class="book-author">Arun Guptah</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/b6e251455aaeb6a2432576b9cff72d5e.jpg" alt="Learning python">
+						</div>
+						<p class="book-name">Learning python</p>
+						<p class="book-author">Mark Lutz</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/00241db3.jpeg" alt="Unix in a nutshall">
+						</div>
+						<p class="book-name"><span class="uppercase">Unix in a nutshall</span></p>
+						<p class="book-author">Arnold robbins</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/OReilly-Mastering-Algorithms-with-Perl_800x600.jpg" alt="Mastering Algorithms with Perl">
+						</div>
+						<p class="book-name">Algorithms <span class="lowercase">with</span> Perl</p>
+						<p class="book-author">Jon orwant</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/1000784010.jpg" alt="HTML и XHTML">
+						</div>
+						<p class="book-name"><span class="uppercase">HTML</span> и <span class="uppercase">XHTML</span></p>
+						<p class="book-author">Elisabeth Robson</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/drupal-oreilly-book-cover-900x1350.jpg" alt="Using drupal">
+						</div>
+						<p class="book-name">Using drupal</p>
+						<p class="book-author">Angela Byron</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/b6e251455aaeb6a2432576b9cff72d5e.jpg" alt="Learning python">
+						</div>
+						<p class="book-name">Learning python</p>
+						<p class="book-author">Mark Lutz</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/A3E09115-C507-439F-A764-E4BB89967E16Img100.jpg" alt="C++ in a nutshall">
+						</div>
+						<p class="book-name">C++ <span class="uppercase">in a nutshall</span></p>
+						<p class="book-author">Ray Lishner</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</p>
+					</div>
+					<div class="information-unit">
+						<div class="image-book">
+							<img src="lib/img/cover/cover.jpg" alt="Linux device drivers">
+						</div>
+						<p class="book-name"><span class="uppercase">Linux device drivers</span></p>
+						<p class="book-author">Alessandro Rubini</p>
+						<p>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</p>
+					</div>
+				</article>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="button-footer left"><i class="fa fa-question-circle" aria-hidden="true"></i></div>
+			<div class="button-footer right"><i class="fa fa-cog" aria-hidden="true"></i></div>
+		</footer>
+	</div>
+</body>
+</html>
