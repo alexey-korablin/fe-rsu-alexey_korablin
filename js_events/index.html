@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Events</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main>
+		<header>ToDO List</header>
+		<section class="toDoList">
+			<ul>
+				<li><input type="checkbox" id="checkBox0" checked><label for="checkBox0">ToDO Item1</label></li>
+				<li><input type="checkbox" id="checkBox1" checked><label for="checkBox1">ToDO Item1</label></li>
+				<li><input type="checkbox" id="checkBox2" checked><label for="checkBox2">ToDO Item1</label></li>
+				<li><input type="checkbox" id="checkBox3" checked><label for="checkBox3">ToDO Item1</label></li>
+				<li><input type="checkbox" id="checkBox4" checked><label for="checkBox4">ToDO Item1</label></li>
+			</ul>
+		</section>
+		<section class="confirm" id="confirm">
+			<header>Are you sure?</header>
+			<article>	Are you sure you want to add new ToDO item: <span id="todoItem">{name}</span>?</article>
+			<div>
+				<button class="btnYes">Yes</button>
+				<button class="btnNo">No</button>
+			</div>
+		</section>
+		<section class="button">
+			<input type="text" id="toDoName" value="" placeholder="ToDO Text">
+			<button id="toDoSubmit">Add</button>
+		</section>
+	</main>
+	<script type="text/javascript" src="lib/script/events.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+html,body{
+	margin: 0;
+	padding: 0;
+}
+body{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+main{
+	width: 22.0em;
+	height: 26.8em;	
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	/*background-color: #f0deb4;*/
+	position: relative;	
+	font-family: Comic_font, Arial, sans-serif;
+	color: #555;
+}
+main> header{
+	text-align: center;
+	padding: 0.8em 0 0.3em; 
+	font-size: 2.1em;	
+}
+
+.toDoList ul{
+	list-style: none;
+	padding-top: 	1.9em;
+	padding-left: 1.1em;
+	padding-bottom: 4em;
+	margin-top: 0;
+	font-size: 1.4em;	
+	overflow-y: scroll;
+}
+
+.button{
+	height: 1.8em;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	font-family: Comic_font, Arial, sans-serif;
+}
+#toDoName{
+	width: 68%;
+	font-family: Comic_font, Arial, sans-serif;
+	font-size: 1.6em;
+	border-radius: 0.2em;
+	border: 1px solid #777;
+}
+#toDoSubmit{
+	width: 30%;
+	font-family: Comic_font, Arial, sans-serif;
+	font-size: 1.3em;
+	vertical-align: middle;
+	line-height: 1;
+	border-radius: 0.2em;
+	border: 1px solid #bbb;
+	background-color: white;
+	color: #555;
+}
+
+/*Confirm window*/
+
+.confirm{
+	position: absolute;
+	width: 20.0em;
+	height: 8.5em;
+	background-color: #fff;
+	top: 15.8em;
+	left: 1em;
+	text-align: center;
+	border: 2px solid #444;
+	border-radius: 0.3em;
+	visibility: hidden;
+}
+.confirm header{
+	font-size: 1.8em;
+	border-bottom: 2px solid #bbb;
+}
+.confirm article{
+	padding-top: 0.5em;
+	padding-bottom: 1.6em;
+}
+div{
+	padding-bottom: 1.0em;
+}
+div button{
+	width: 4.0em;	
+	height: 1.4em;
+	background-color: #fff;
+	border: 1px;
+	border-radius: 0.3em;
+	border: 1px solid #bbb;
+	font-family: Comic_font, Arial, sans-serif;
+	font-size: 1.4em;
+	line-height: 0.8;
+	color: #555;
+}
+@font-face{
+	font-family: Comic_font;
+	src: url(../lib/fonts/Comic_font.ttf);
+}
+
+/*
+::-webkit-scrollbar{
+    width:1.1em;
+}
+::-webkit-scrollbar-thumb{
+    border-width:0.1em 0.1em 0.1em 0.2em;
+    border-color: #19202e;
+    background-color: #33475f;
+}
+::-webkit-scrollbar-track{
+    border-width: 0.3em;
+    border-color: #7e8c8d;
+    background-color: white;
+}*/
