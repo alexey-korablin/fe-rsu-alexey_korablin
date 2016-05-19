@@ -15,13 +15,13 @@ function task1() {
 	inner_block_mainContent.className = 'inner_block_mainContent';
 	inner_block_header_pseudo.className = 'inner_block_header_pseudo';
 
-	outer_block.innerHTML;
-	inner_block.innerHTML;
-	inner_block_header.innerHTML;
+	outer_block.innerHTML = '';
+	inner_block.innerHTML = '';
+	inner_block_header.innerHTML = '';
 	header.innerHTML = 'Header';
-	inner_block_mainContent.innerHTML;
+	inner_block_mainContent.innerHTML = '';
 	paragraph.innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ut expedita voluptatibus fugit doloremque, similique deleniti inventore possimus maxime, ex alias eos quo aspernatur, natus qui magnam accusantium minus labore?';
-	inner_block_header_pseudo.innerHTML;
+	inner_block_header_pseudo.innerHTML = '';
 
 	body[0].appendChild(outer_block);
 	outer_block.appendChild(inner_block);
