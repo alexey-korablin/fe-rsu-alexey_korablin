@@ -9,20 +9,20 @@
 	<main>
 		<header>ToDO List</header>
 		<section class="toDoList">
-			<ul>
-				<li><input type="checkbox" id="checkBox0" checked><label for="checkBox0">ToDO Item1</label></li>
-				<li><input type="checkbox" id="checkBox1" checked><label for="checkBox1">ToDO Item1</label></li>
-				<li><input type="checkbox" id="checkBox2" checked><label for="checkBox2">ToDO Item1</label></li>
-				<li><input type="checkbox" id="checkBox3" checked><label for="checkBox3">ToDO Item1</label></li>
-				<li><input type="checkbox" id="checkBox4" checked><label for="checkBox4">ToDO Item1</label></li>
+			<ul id="listItems">
+				<li><input type="checkbox" id="checkBox0" value="0" checked><label for="checkBox0">ToDO Item1</label></li>
+				<li><input type="checkbox" id="checkBox1" value="1" checked><label for="checkBox1">ToDO Item1</label></li>
+				<li><input type="checkbox" id="checkBox2" value="2" checked><label for="checkBox2">ToDO Item1</label></li>
+				<li><input type="checkbox" id="checkBox3" value="3" checked><label for="checkBox3">ToDO Item1</label></li>
+				<li><input type="checkbox" id="checkBox4" value="4" checked><label for="checkBox4">ToDO Item1</label></li>
 			</ul>
 		</section>
 		<section class="confirm" id="confirm">
 			<header>Are you sure?</header>
-			<article>	Are you sure you want to add new ToDO item: <span id="todoItem">{name}</span>?</article>
+			<article>	Are you sure you want to add new ToDO item: <span id="todoItem"></span>?</article>
 			<div>
-				<button class="btnYes">Yes</button>
-				<button class="btnNo">No</button>
+				<button class="btnYes" id="btnYes">Yes</button>
+				<button class="btnNo" id="btnNo">No</button>
 			</div>
 		</section>
 		<section class="button">
